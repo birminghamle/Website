@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        body {
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+    </style>
 <head>
-<title>Blogs</title>
+    <title>Blogs</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-    <h1>Blogs</h1>
+    <nav class="navbar">
+    <!--- LOGO -->
+    <!--- Navigation Menu -->
+    <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!--- Navigation Menu -->
+        <div class="menu">
+            <li><a href="home.html">Home</li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Skills.html">Skills</a></li>    
+            <li><a href="Awards.html">Awards & Recognition</a></li>     
+            <li><a href="Blog.html">Blogs</a></li>
+            <li><a href="ContactMe.html">Contact Me</a></li>
+            </div class="links">
+        </div class="menu">
+    </ul>
+</nav>
+
+<h1>Blogs</h1>
     <div class="nav">
         <ul>
             <div class="container">
                 <li><a class ='Link' href="evolution_of_cybercrime.html">The Evolution of Cyber-Crime</a></li>
         </ul>
     </div>
-</body>
-<hr />
-<div class="nav">
-    <ul>
-        <div class="container">
-            <li><a class ='Link' href="Home.html">Home</a></li>
-            <li><a class ='Link' href="Education.html">Education</a></li>
-            <li><a class ='Link' href="Skills.html">Skills</a></li>    
-            <li><a class ='Link' href="Awards.html">Awards & Recognition</a></li>
-            <li><a class ='Link' href="Blog.html">Blog</a></li>
-            <li><a class ='Link' href="ContactMe.html">Contact Me</a></li>
-    </ul>
-</div>
-<div>
+
+
+<div id="footer">
     Copyright &copy; 2022 Lathan Birmingham
-</div>
+</div id=footer>
+</body>
 </html>
