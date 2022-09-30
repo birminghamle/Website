@@ -15,33 +15,44 @@
 </head>
 <body>
     <nav class="navbar">
-        <!--- LOGO -->
-        <!--- Navigation Menu -->
-        <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!--- Navigation Menu -->
-            <div class="menu">
-                <li><a href="home.html">Home</li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Experience.html">Experience</a></li>
-                <li><a href="Skills.html">Skills</a></li>    
-                <li><a href="Awards.html">Awards & Recognition</a></li>     
-                <li><a href="Blog.html">Blogs</a></li>
-                <li><a href="ContactMe.html">Contact Me</a></li>
-                </div class="links">
-            </div class="menu">
+        <!-- LOGO -->
+          <div class="logo">   </div>
+        <!-- NAVIGATION MENU -->
+          <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+          <li class="blogs">
+            <a href="blog.html">Blogs</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="evolution_of_cybercrime.html">The Evolution of Cyber-Crime</a></li>
+              </ul>
+            </li>
+            <li class="aboutme">
+              <a href="aboutme.html">About Me</a>
+            <!--- DROPDOWN MENU-->
+              <ul class="dropdown">
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="awards.html">Awards & Recognition</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
         </ul>
-    </nav>
+      </nav>
     <h1>Education</h1>
     <hr />
         <div>
             <h2>Bellevue University</h2>
                 <p><i>Bachelor of Science in Cybersecurity - June 2023</i></p>
                     <h3>Courses</h3>
-                    <ul>
+                    <ul id="list">
                         <li>Intro to Programming (Python)</li>
                         <li>Network Security</li>
                         <li>Securing Access Control</li>
