@@ -22,26 +22,33 @@
    margin-right: 30px;
    }
 
-/* NAVBAR STYLING STARTS */
+/* NAVBAR */
 .navbar {
-    display: flex;
-    justify-content: left;
-    padding: 20px;
-    background-color: black;
-    color: #fff;
+   display: flex;
+   justify-content: left;
+   padding: 2px;
+   background-color: #3a3c4b;
    }
-   .nav-links a {
-    color: #4ACCFD;
+   .nav-menu a {
+      color: #4ACCFD;
    }
-   /* LOGO */
-   .logo {
-    font-size: 32px;
-   }
+
    /* NAVBAR MENU */
    .menu {
-    display: flex;
-    gap: 50px;
-    font-size: 18px;
+      display: inline;
+      gap: 50px;
+      background-color: #3a3c4b;
+      font-size: 18px;
+   }
+
+   .menu li {
+      list-style: none
+   }
+
+   .menu li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
    }
 
    .menu li:hover {
@@ -57,29 +64,34 @@
 
    /* button color - menu and dropdown */
    .menu li {
-    padding: 10px;
+      padding: 10px;
+      float: left;
    }
 
    /* DROPDOWN MENU */
    .blogs {
-    position: relative;
+      position: relative;
    }
    .aboutme {
-    position: relative;
+      position: relative;
    }
 
    /* dropdown menu */
    .dropdown {
-    background-color: #5900ED;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-    margin-left: 0;
+      background-color: #5900ED;
+      position: absolute; /*WITH RESPECT TO PARENT*/
+      display: none;
+      border-radius: 8px;
+      top: 35px;
+      margin-left: 0;
+      margin-top: 26px;
+
    }
    .dropdown li + li {
     top-margin: 10px;
    }
+
+   
   
    /* dropdown and text */
    .dropdown li{
@@ -90,17 +102,19 @@
 
   
    .dropdown li :hover {
-        color: gray;
+      color: gray;
+      display: block;
    }
    .blogs:hover .dropdown {
-    display: block;
+      display: block;
    }
 
    .aboutme:hover .dropdown {
-    display: block;
+      display: block;
    }
 
    .dropdown li a {
+      display: block;
    }
 
    /*RESPONSIVE NAVBAR MENU STARTS*/
@@ -114,48 +128,15 @@ input[type=checkbox]{
     font-size: 24px;
     user-select: none;
    }
-   /* APPLYING MEDIA QUERIES */
-   @media (max-width: 768px) {
-   .menu { 
-    display:none;
-    position: relative
-    background-color:black;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px;
-   }
-   .menu li:hover {
-    display: inline-block;
-    background-color:#4c9e9e;
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
-    display: block;
-   }
-   .hamburger {
-    display: block;
-   }
-   .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-    position: fixed;
-    z-index: -1;
-   }
-   }
 
    #container {
-    background-color: black;
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
+    list-style: circle
    }
+
+
 
    .content {
     width: 50%;
@@ -164,8 +145,7 @@ input[type=checkbox]{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-   }
+      }
 
    #footer {
     clear: both;
